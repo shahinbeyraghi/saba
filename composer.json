@@ -1,0 +1,21 @@
+{
+    "name": "saba_test/trip",
+    "type": "project",
+    "description": "sort trips card test.",
+    "keywords": [
+        "test",
+        "trip"
+    ],
+    "license": "shahinbeyraghi@gmail.com",
+    "require": {
+        "php": "^7.2.5"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\": "Core/"
+        }
+    }
+}
