@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5dac4b9a-fbfe-4a68-b4d8-cf74287c3d3b",
+		"name": "saba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sort",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"Departure\":\"Stockholm\",\"Arrival\":\"New York\",\"Transportation\":\"Plane\",\"TransportationNumber\":\"SK22\",\"Seat\":\"7B\",\"Gate\":\"22\"},{\"Departure\":\"Madrid\",\"Arrival\":\"Barcelona\",\"Transportation\":\"Train\",\"TransportationNumber\":\"78A\",\"Seat\":\"45B\"},{\"Departure\":\"Gerona Airport\",\"Arrival\":\"Stockholm\",\"Transportation\":\"Plane\",\"TransportationNumber\":\"SK455\",\"Seat\":\"3A\",\"Gate\":\"45B\",\"Baggage\":\"334\"},{\"Departure\":\"Barcelona\",\"Arrival\":\"Gerona Airport\",\"Transportation\":\"Bus\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/tests/saba/web/sort-trips",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tests",
+						"saba",
+						"web",
+						"sort-trips"
+					],
+					"query": [
+						{
+							"key": "ignoreValidation",
+							"value": "1",
+							"description": "this field added because validation interfaces command dont work. ",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
